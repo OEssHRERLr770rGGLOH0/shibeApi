@@ -79,6 +79,7 @@ class ListFragment : Fragment(), KoinComponent {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        _loadingViewBinding = null
     }
 
     /**
