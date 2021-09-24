@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shibe"
+            type="com.tobianoapps.shibeapi.list.api.ShibeModels.Shibe" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/recycler_item_margin_horizontal"
+        android:layout_marginTop="@dimen/recycler_item_margin_top"
+        android:layout_marginEnd="@dimen/recycler_item_margin_horizontal"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="@color/colorCardBackground"
+        android:elevation="12dp"
+        android:transitionName="@{@string/card_transition(shibe.url)}">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycler_item_image_height"
+            android:scaleType="centerCrop"
+            android:transitionName="@{@string/image_transition(shibe.url)}"
+            app:coilStart="@{true}"
+            app:imgUrl="@{shibe.url}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Round.Top"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/recycler_item_text_margin_horizontal"
+            android:layout_marginTop="@dimen/recycler_item_text_margin_vertical"
+            android:layout_marginEnd="@dimen/recycler_item_text_margin_horizontal"
+            android:layout_marginBottom="@dimen/recycler_item_text_margin_vertical"
+            android:gravity="center"
+            android:maxLines="3"
+            android:text="@{shibe.doggoLingo}"
+            android:textSize="@dimen/recycler_item_text_size"
+            android:transitionName="@{@string/text_transition(shibe.url)}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv"
+            tools:text="Hello fren!" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

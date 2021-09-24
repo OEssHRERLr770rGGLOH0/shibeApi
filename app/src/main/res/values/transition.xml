@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="card_transition">card_transition %1$s</string>
+    <string name="image_transition">image_transition %1$s</string>
+    <string name="text_transition">text_transition %1$s</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShibeApi</string>
+    <string name="fragment_main_label">Wall of Shibes</string>
+    <string name="fragment_detail_label">Shibe</string>
+    <string name="loading">Loading, please wait…</string>
+    <string name="fab_content_description">floating action button</string>
+</resources>

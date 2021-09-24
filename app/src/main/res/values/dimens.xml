@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fab_margin">32dp</dimen>
+    <dimen name="card_radius">10dp</dimen>
+
+    <!-- RECYCLER ITEM-->
+    <dimen name="recycler_item_margin_horizontal">16dp</dimen>
+    <dimen name="recycler_item_margin_top">16dp</dimen>
+    <dimen name="recycler_item_image_height">150dp</dimen>
+    <dimen name="recycler_item_text_margin_horizontal">8dp</dimen>
+    <dimen name="recycler_item_text_margin_vertical">16dp</dimen>
+    <dimen name="recycler_item_text_size">18sp</dimen>
+
+    <!-- FRAGMENT DETAIL-->
+    <dimen name="fragment_detail_text_margin">8dp</dimen>
+    <dimen name="fragment_detail_text_size">20sp</dimen>
+    <dimen name="fragment_detail_image_height">300dp</dimen>
+    <dimen name="fragment_detail_image_elevation">12dp</dimen>
+</resources>
