@@ -9,7 +9,7 @@
 
 Barebones sample project demonstrating use of [Coil](https://coil-kt.github.io/coil/), [Koin](https://insert-koin.io/), [Ktor](https://ktor.io/), as well as a 
 few [Android Jetpack Libraries](https://developer.android.com/jetpack) like [Navigation Components](https://developer.android.com/guide/navigation), [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel), 
-[Live Data](https://developer.android.com/topic/libraries/architecture/livedata),[View Binding](https://developer.android.com/topic/libraries/view-binding), [Data Binding](https://developer.android.com/topic/libraries/data-binding), 
+[Live Data](https://developer.android.com/topic/libraries/architecture/livedata), [View Binding](https://developer.android.com/topic/libraries/view-binding), [Data Binding](https://developer.android.com/topic/libraries/data-binding), 
 all through a single-activity, MVVM architecture.  
 
 [Shared element transitions](https://developer.android.com/guide/fragments/animate) provide visual polish to the master/detail transitions.
