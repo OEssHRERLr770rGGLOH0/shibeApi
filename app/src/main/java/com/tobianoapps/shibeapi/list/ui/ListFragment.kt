@@ -21,9 +21,8 @@ import com.tobianoapps.shibeapi.ShibeViewModel
 import com.tobianoapps.shibeapi.databinding.FragmentListBinding
 import com.tobianoapps.shibeapi.databinding.LoadingViewBinding
 import com.tobianoapps.shibeapi.detail.ui.DetailFragment
-import kotlinx.coroutines.CoroutineDispatcher
+import com.tobianoapps.shibeapi.util.Extensions.toggleFabVisibility
 import org.koin.core.component.KoinComponent
-import org.koin.core.component.inject
 
 
 class ListFragment : Fragment(), KoinComponent {
@@ -31,7 +30,6 @@ class ListFragment : Fragment(), KoinComponent {
     /*** PROPERTIES ***/
     private val shibeViewModel: ShibeViewModel by activityViewModels()
     private lateinit var listAdapter: ListAdapter
-    private val ioDispatcher: CoroutineDispatcher by inject()
 
     // View binding
     private var _binding: FragmentListBinding? = null
@@ -80,6 +78,16 @@ class ListFragment : Fragment(), KoinComponent {
         super.onDestroyView()
         _binding = null
         _loadingViewBinding = null
+    }
+
+    override fun onResume() {
+        super.onResume()
+        activity?.toggleFabVisibility(true)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        activity?.toggleFabVisibility(false)
     }
 
     /**
