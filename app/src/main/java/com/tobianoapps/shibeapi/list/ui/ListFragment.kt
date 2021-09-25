@@ -16,12 +16,12 @@ import androidx.navigation.fragment.FragmentNavigator
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.tobianoapps.shibeapi.R
 import com.tobianoapps.shibeapi.ShibeViewModel
 import com.tobianoapps.shibeapi.databinding.FragmentListBinding
 import com.tobianoapps.shibeapi.databinding.LoadingViewBinding
 import com.tobianoapps.shibeapi.detail.ui.DetailFragment
-import com.tobianoapps.shibeapi.util.Extensions.toggleFabVisibility
 import org.koin.core.component.KoinComponent
 
 
@@ -82,12 +82,12 @@ class ListFragment : Fragment(), KoinComponent {
 
     override fun onResume() {
         super.onResume()
-        activity?.toggleFabVisibility(true)
+        activity?.findViewById<FloatingActionButton>(R.id.fab)?.show()
     }
 
     override fun onPause() {
         super.onPause()
-        activity?.toggleFabVisibility(false)
+        activity?.findViewById<FloatingActionButton>(R.id.fab)?.hide()
     }
 
     /**
