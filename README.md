@@ -1,6 +1,6 @@
 &nbsp;&nbsp;
 <p align="center">
-    <img src="https://icon-library.com/images/shiba-inu-icon/shiba-inu-icon-21.jpg" width="50%" height="50%" alt="shibe_img">
+    <img src="shibe.jpg" width="50%" height="50%" alt="shibe_img">
 </p>
 
 &nbsp;&nbsp;&nbsp;
