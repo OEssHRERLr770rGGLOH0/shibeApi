@@ -8,7 +8,7 @@ import org.koin.core.component.inject
 /**
  * Main endpoint for the Shibe API
  */
-class ShibeApi(): KoinComponent {
+class ShibeApi: KoinComponent {
 
     private val client: HttpClient by inject()
 

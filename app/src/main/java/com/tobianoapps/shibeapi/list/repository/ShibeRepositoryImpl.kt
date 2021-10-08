@@ -2,8 +2,9 @@ package com.tobianoapps.shibeapi.list.repository
 
 import com.tobianoapps.shibeapi.list.api.ShibeApi
 import com.tobianoapps.shibeapi.util.Resource
+import java.io.IOException
 
-class ShibeRepositoryImpl() : ShibeRepository {
+class ShibeRepositoryImpl : ShibeRepository {
 
     /**
      * Use this to call the [ShibeApi]
@@ -13,7 +14,7 @@ class ShibeRepositoryImpl() : ShibeRepository {
     override suspend fun getShibes(): Resource<List<String>?> {
         return try {
             Resource.Success(ShibeApi().getShibes())
-        } catch (e: Exception) {
+        } catch (e: IOException) {
             Resource.Error("Error when getting shibes: $e")
         }
     }
