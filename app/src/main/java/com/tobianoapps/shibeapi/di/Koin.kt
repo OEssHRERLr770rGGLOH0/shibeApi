@@ -22,6 +22,7 @@ import org.koin.dsl.module
 object Koin {
 
     private const val TIMEOUT = 10000L
+    private const val SHIBE_ITEM_COUNT = 100
 
     val appModule = module {
 
@@ -57,7 +58,7 @@ object Koin {
                 // Apply to All Requests
                 defaultRequest {
 
-                    parameter("count", 100)
+                    parameter("count", SHIBE_ITEM_COUNT)
                     parameter("urls", "true")
                     parameter("httpsUrls", "true")
 
