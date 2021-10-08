@@ -2,19 +2,21 @@ package com.tobianoapps.shibeapi.di
 
 import android.util.Log
 import com.moczul.ok2curl.CurlInterceptor
-import com.tobianoapps.shibeapi.list.repository.ShibeRepositoryImpl
 import com.tobianoapps.shibeapi.ShibeViewModel
-import io.ktor.client.*
-import io.ktor.client.engine.okhttp.*
-import io.ktor.client.features.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
-import io.ktor.client.request.*
-import io.ktor.http.*
-import kotlinx.coroutines.CoroutineDispatcher
+import com.tobianoapps.shibeapi.list.repository.ShibeRepositoryImpl
+import io.ktor.http.HttpMethod
+import io.ktor.http.ContentType
+import io.ktor.http.contentType
+import io.ktor.client.HttpClient
+import io.ktor.client.engine.okhttp.OkHttp
+import io.ktor.client.request.accept
+import io.ktor.client.request.parameter
+import io.ktor.client.features.defaultRequest
+import io.ktor.client.features.HttpTimeout
+import io.ktor.client.features.json.JsonFeature
+import io.ktor.client.features.json.serializer.KotlinxSerializer
 import kotlinx.coroutines.Dispatchers
 import org.koin.androidx.viewmodel.dsl.viewModel
-import org.koin.core.qualifier.named
 import org.koin.dsl.module
 
 object Koin {
