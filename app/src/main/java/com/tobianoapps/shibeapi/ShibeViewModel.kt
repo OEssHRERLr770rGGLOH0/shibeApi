@@ -1,7 +1,11 @@
 package com.tobianoapps.shibeapi
 
 import android.app.Application
-import androidx.lifecycle.*
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.map
 import com.tobianoapps.shibeapi.list.api.ShibeApi
 import com.tobianoapps.shibeapi.list.api.ShibeModels
 import com.tobianoapps.shibeapi.list.api.ShibeModels.Shibe
