@@ -1,6 +1,6 @@
 &nbsp;&nbsp;
 <p align="center">
-    <img src="https://icon-library.com/images/shiba-inu-icon/shiba-inu-icon-21.jpg" width="50%" height="50%" alt="shibe_img">
+    <img src="shibe.jpg" width="50%" height="50%" alt="shibe_img">
 </p>
 
 &nbsp;&nbsp;&nbsp;
@@ -49,3 +49,9 @@ The `ViewModel` class is designed to store and manage UI-related data in a lifec
 
 The Data Binding Library is a support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
 
+&nbsp;&nbsp;
+<p align="center">
+    <img src="main.png" width="33%" height="33%" alt="app_main_screen">
+    <img src="detail.png" width="33%" height="33%" alt="app_detail_screen">
+    <img src="dark.png" width="33%" height="33%" alt="app_main_screen_dark">
+</p>
